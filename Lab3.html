@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Створення форм за допомогою HTML</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td colspan="2" align="center"> Pc shop</td>
+    </tr>
+    <tr>
+        <td >Name:</td>
+        <td>
+            <form>
+                <label for="name"></label>
+                <input type="text" id="name" name="user_name" required>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td >Pc components</td>
+        <td>
+            <form>
+                <label>
+                    <input type="radio" name="question" value="CPU">
+                    CPU
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="question" value="GPU">
+                    GPU
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="question" value="RAM">
+                    RAM
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="question" value="Motherboard">
+                    Motherboard
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="question" value="SSD">
+                    SSD
+                </label>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td >Pupose</td>
+        <td> <select>
+            <option value="1">Gaming</option>
+            <option value="2">Work</option>
+            <option value="3">Home</option>
+            <option value="4">Streaming</option>
+        </select> </td>
+    </tr>
+    <tr>
+        <td >Company</td>
+        <td>
+            <form action="handler.php">
+                <p><input type="checkbox" name="a" > Nvidia</p>
+                <p><input type="checkbox" name="a" > AMD</p>
+                <p><input type="checkbox" name="a" > Intel</p>
+                <p><input type="checkbox" name="a" > Kingston</p>
+                <p><input type="checkbox" name="a" > Crucial</p>
+                <p><input type="checkbox" name="a" > Corsair</p>
+                <p><input type="checkbox" name="a" > Samsung</p>
+                <p><input type="checkbox" name="a" > Gigabyte</p>
+                <p><input type="checkbox" name="a" > MSI</p>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"> Answer the question
+            <p>
+                <label for="msg"></label>
+                <textarea id="msg" name="user_message"></textarea> 
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"> <button type="submit">Send</button>
+        </td>
+    </tr>
+</body>
+</html>
